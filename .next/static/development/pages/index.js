@@ -5375,32 +5375,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swr */ "./node_modules/swr/esm/index.js");
 /* harmony import */ var _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/apiSearch */ "./lib/apiSearch.js");
 var _jsxFileName = "/home/runner/vidregator/pages/index.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useSWR = Object(swr__WEBPACK_IMPORTED_MODULE_2__["default"])('test lol', _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__["default"]),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('test lol'),
+      query = _useState[0],
+      setQuery = _useState[1];
+
+  var _useSWR = Object(swr__WEBPACK_IMPORTED_MODULE_2__["default"])(query, _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__["default"]),
       data = _useSWR.data,
       error = _useSWR.error;
 
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, "Vidregator"), __jsx("link", {
@@ -5408,7 +5413,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }), __jsx("link", {
@@ -5416,57 +5421,68 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
-  })), error ? 'Error!' : data ? data.map(function (site) {
+  })), __jsx("input", {
+    type: "search",
+    value: query,
+    onChange: function onChange(e) {
+      return setQuery(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), error ? 'Error!' : data ? data.map(function (site) {
     return __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 26
       },
       __self: this
     }, __jsx("strong", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 27
       },
       __self: this
     }, site.name), __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 27
       },
       __self: this
     }), __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 28
       },
       __self: this
     }, site.results.map(function (result) {
       return __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 29
         },
         __self: this
       }, __jsx("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 30
         },
         __self: this
       }, result.name), __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 30
         },
         __self: this
       }), "Description:  ", result.description, __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 31
         },
         __self: this
       }), "Tags: ", result.tags.join(', '));

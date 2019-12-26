@@ -134,6 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swr__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/apiSearch */ "./lib/apiSearch.js");
 var _jsxFileName = "/home/runner/vidregator/pages/index.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -141,25 +142,29 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (() => {
   const {
+    0: query,
+    1: setQuery
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('test lol');
+  const {
     data,
     error
-  } = swr__WEBPACK_IMPORTED_MODULE_2___default()('test lol', _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  } = swr__WEBPACK_IMPORTED_MODULE_2___default()(query, _lib_apiSearch__WEBPACK_IMPORTED_MODULE_3__["default"]);
   return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, __jsx("title", {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: undefined
   }, "Vidregator"), __jsx("link", {
@@ -167,7 +172,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }), __jsx("link", {
@@ -175,55 +180,64 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     href: "https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
-  })), error ? 'Error!' : data ? data.map(site => __jsx("div", {
+  })), __jsx("input", {
+    type: "search",
+    value: query,
+    onChange: e => setQuery(e.target.value),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
+    },
+    __self: undefined
+  }), error ? 'Error!' : data ? data.map(site => __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 27
     },
     __self: undefined
   }, site.name), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 27
     },
     __self: undefined
   }), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 28
     },
     __self: undefined
   }, site.results.map(result => __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 29
     },
     __self: undefined
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 30
     },
     __self: undefined
   }, result.name), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 30
     },
     __self: undefined
   }), "Description:  ", result.description, __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 31
     },
     __self: undefined
   }), "Tags: ", result.tags.join(', ')))))) : 'Loading...');
