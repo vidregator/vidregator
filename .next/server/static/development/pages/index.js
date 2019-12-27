@@ -170,46 +170,56 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles */ "./styles.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "react-feather");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_feather__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/home/runner/vidregator-1/components/SearchBox.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 /* harmony default export */ __webpack_exports__["default"] = (({
   value,
   onChange,
   placeholder
 }) => __jsx("div", {
-  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["177174608", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]) + " " + 'container',
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["177174608", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]) + " " + 'icon',
+  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1219865645", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]) + " " + 'container',
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, "S"), __jsx("input", {
-  type: "search",
-  value: value,
-  onChange: onChange,
-  placeholder: placeholder,
-  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["177174608", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]),
+}, __jsx("div", {
+  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1219865645", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]) + " " + 'icon',
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
+}, __jsx(react_feather__WEBPACK_IMPORTED_MODULE_3__["Search"], {
+  width: 20,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+})), __jsx("input", {
+  type: "search",
+  value: value,
+  onChange: onChange,
+  placeholder: placeholder,
+  className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1219865645", [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted]]]),
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
 }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "177174608",
+  id: "1219865645",
   dynamic: [_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted, _styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted],
   __self: undefined
-}, `.container.__jsx-style-dynamic-selector{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}input.__jsx-style-dynamic-selector{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface} ${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset} ${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText} width:100%;padding-left:calc(30px + 1.2rem);}.icon.__jsx-style-dynamic-selector{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted} font-size:1.2rem;position:absolute;padding-left:22px;pointer-events:none;}.__jsx-style-dynamic-selector::-webkit-input-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector::-moz-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector:-ms-input-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector::placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}input.__jsx-style-dynamic-selector::-webkit-search-decoration,input.__jsx-style-dynamic-selector::-webkit-search-cancel-button,input.__jsx-style-dynamic-selector::-webkit-search-results-button,input.__jsx-style-dynamic-selector::-webkit-search-results-decoration{-webkit-appearance:none;}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci92aWRyZWdhdG9yLTEvY29tcG9uZW50cy9TZWFyY2hCb3guanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWWdCLEFBRzJCLEFBU1AsQUFNTSxBQVFwQixBQU0wQixrQkE1QlYsTUE2QmYsS0FQQSxpQkFQb0Isa0JBQ0Esa0JBQ0UsVUFoQkQsTUFRYyxJQVNuQyw2QkFSQSxzREFSQSIsImZpbGUiOiIvaG9tZS9ydW5uZXIvdmlkcmVnYXRvci0xL2NvbXBvbmVudHMvU2VhcmNoQm94LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlcyBmcm9tICcuLi9zdHlsZXMnXG5cbmV4cG9ydCBkZWZhdWx0ICh7IHZhbHVlLCBvbkNoYW5nZSwgcGxhY2Vob2xkZXIgfSkgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT0nY29udGFpbmVyJz5cbiAgICA8ZGl2IGNsYXNzTmFtZT0naWNvbic+UzwvZGl2PlxuICAgIDxpbnB1dFxuICAgICAgdHlwZT0nc2VhcmNoJ1xuICAgICAgdmFsdWU9e3ZhbHVlfVxuICAgICAgb25DaGFuZ2U9e29uQ2hhbmdlfVxuICAgICAgcGxhY2Vob2xkZXI9e3BsYWNlaG9sZGVyfVxuICAgIC8+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAuY29udGFpbmVyIHtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgfVxuICAgIFxuICAgICAgaW5wdXQge1xuICAgICAgICAke3N0eWxlcy5zdXJmYWNlfVxuICAgICAgICAke3N0eWxlcy5pbnB1dFJlc2V0fVxuICAgICAgICAke3N0eWxlcy5iaWdnZXJUZXh0fVxuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiBjYWxjKDMwcHggKyAxLjJyZW0pO1xuICAgICAgfVxuXG4gICAgICAuaWNvbiB7XG4gICAgICAgICR7c3R5bGVzLnRleHQubXV0ZWR9XG4gICAgICAgIGZvbnQtc2l6ZTogMS4ycmVtO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMjJweDtcbiAgICAgICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIDo6cGxhY2Vob2xkZXIge1xuICAgICAgICAke3N0eWxlcy50ZXh0Lm11dGVkfVxuICAgICAgfVxuXG4gICAgICBpbnB1dDo6LXdlYmtpdC1zZWFyY2gtZGVjb3JhdGlvbixcbiAgICAgIGlucHV0Ojotd2Via2l0LXNlYXJjaC1jYW5jZWwtYnV0dG9uLFxuICAgICAgaW5wdXQ6Oi13ZWJraXQtc2VhcmNoLXJlc3VsdHMtYnV0dG9uLFxuICAgICAgaW5wdXQ6Oi13ZWJraXQtc2VhcmNoLXJlc3VsdHMtZGVjb3JhdGlvbiB7XG4gICAgICAgIC13ZWJraXQtYXBwZWFyYW5jZTpub25lO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9kaXY+XG4pIl19 */
+}, `.container.__jsx-style-dynamic-selector{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}input.__jsx-style-dynamic-selector{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].surface} ${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].inputReset} ${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].biggerText} width:100%;padding-left:52px;}.icon.__jsx-style-dynamic-selector{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted} position:absolute;padding-left:22px;pointer-events:none;}.__jsx-style-dynamic-selector::-webkit-input-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector::-moz-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector:-ms-input-placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}.__jsx-style-dynamic-selector::placeholder{${_styles__WEBPACK_IMPORTED_MODULE_2__["default"].text.muted};}input.__jsx-style-dynamic-selector::-webkit-search-decoration,input.__jsx-style-dynamic-selector::-webkit-search-cancel-button,input.__jsx-style-dynamic-selector::-webkit-search-results-button,input.__jsx-style-dynamic-selector::-webkit-search-results-decoration{-webkit-appearance:none;}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3J1bm5lci92aWRyZWdhdG9yLTEvY29tcG9uZW50cy9TZWFyY2hCb3guanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYWdCLEFBRzJCLEFBU1AsQUFNTyxBQU9yQixBQU0wQixrQkEzQlYsTUE0QmYsS0FQQSxrQkFOb0Isa0JBQ0Usb0JBQ3RCLE9BaEJxQixNQVFELGtCQUNwQixxRUFSQSIsImZpbGUiOiIvaG9tZS9ydW5uZXIvdmlkcmVnYXRvci0xL2NvbXBvbmVudHMvU2VhcmNoQm94LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlcyBmcm9tICcuLi9zdHlsZXMnXG5pbXBvcnQgeyBTZWFyY2ggfSBmcm9tICdyZWFjdC1mZWF0aGVyJ1xuXG5leHBvcnQgZGVmYXVsdCAoeyB2YWx1ZSwgb25DaGFuZ2UsIHBsYWNlaG9sZGVyIH0pID0+IChcbiAgPGRpdiBjbGFzc05hbWU9J2NvbnRhaW5lcic+XG4gICAgPGRpdiBjbGFzc05hbWU9J2ljb24nPjxTZWFyY2ggd2lkdGg9ezIwfSAvPjwvZGl2PlxuICAgIDxpbnB1dFxuICAgICAgdHlwZT0nc2VhcmNoJ1xuICAgICAgdmFsdWU9e3ZhbHVlfVxuICAgICAgb25DaGFuZ2U9e29uQ2hhbmdlfVxuICAgICAgcGxhY2Vob2xkZXI9e3BsYWNlaG9sZGVyfVxuICAgIC8+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAuY29udGFpbmVyIHtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgfVxuICAgIFxuICAgICAgaW5wdXQge1xuICAgICAgICAke3N0eWxlcy5zdXJmYWNlfVxuICAgICAgICAke3N0eWxlcy5pbnB1dFJlc2V0fVxuICAgICAgICAke3N0eWxlcy5iaWdnZXJUZXh0fVxuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiA1MnB4O1xuICAgICAgfVxuXG4gICAgICAuaWNvbiB7XG4gICAgICAgICR7c3R5bGVzLnRleHQubXV0ZWR9XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAyMnB4O1xuICAgICAgICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgICAgIH1cblxuICAgICAgOjpwbGFjZWhvbGRlciB7XG4gICAgICAgICR7c3R5bGVzLnRleHQubXV0ZWR9XG4gICAgICB9XG5cbiAgICAgIGlucHV0Ojotd2Via2l0LXNlYXJjaC1kZWNvcmF0aW9uLFxuICAgICAgaW5wdXQ6Oi13ZWJraXQtc2VhcmNoLWNhbmNlbC1idXR0b24sXG4gICAgICBpbnB1dDo6LXdlYmtpdC1zZWFyY2gtcmVzdWx0cy1idXR0b24sXG4gICAgICBpbnB1dDo6LXdlYmtpdC1zZWFyY2gtcmVzdWx0cy1kZWNvcmF0aW9uIHtcbiAgICAgICAgLXdlYmtpdC1hcHBlYXJhbmNlOm5vbmU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbikiXX0= */
 /*@ sourceURL=/home/runner/vidregator-1/components/SearchBox.js */`)));
 
 /***/ }),
@@ -620,6 +630,17 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-feather":
+/*!********************************!*\
+  !*** external "react-feather" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-feather");
 
 /***/ }),
 

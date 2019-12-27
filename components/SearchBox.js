@@ -1,8 +1,9 @@
 import styles from '../styles'
+import { Search } from 'react-feather'
 
 export default ({ value, onChange, placeholder }) => (
   <div className='container'>
-    <div className='icon'>S</div>
+    <div className='icon'><Search width={20} /></div>
     <input
       type='search'
       value={value}
@@ -22,12 +23,11 @@ export default ({ value, onChange, placeholder }) => (
         ${styles.inputReset}
         ${styles.biggerText}
         width: 100%;
-        padding-left: calc(30px + 1.2rem);
+        padding-left: 52px;
       }
 
       .icon {
         ${styles.text.muted}
-        font-size: 1.2rem;
         position: absolute;
         padding-left: 22px;
         pointer-events: none;
