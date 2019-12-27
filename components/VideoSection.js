@@ -11,6 +11,7 @@ export default ({ name, videos }) => (
           name={video.name}
           tags={video.tags}
           url={video.url}
+          key={video.url}
         />
       ))}
     </div>

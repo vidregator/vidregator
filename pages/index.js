@@ -24,12 +24,13 @@ export default () => {
         />
 
         {query.trim() && (error ? `Error! ${error.message}` : data ? (
-          data.map((site) => (
+          data.map((site) => site.results.length > 0 ? (
             <VideoSection
               name={site.name}
               videos={site.results}
+              key={site.name}
             />
-          ))
+          ) : null)
         ) : 'Loading...')}
       </Stack>
     </div>
