@@ -8,6 +8,10 @@ export default async (req, res) => {
     return res.status(400).send('Please enter a query!')
   }
 
-  const results = await search(cleanedQuery)
-  return res.status(200).json(results)
+  try {
+    const results = await search(cleanedQuery)
+    return res.status(200).json(results)
+  } catch(error) {
+    return res.status(500).send(error.message)
+  }
 }

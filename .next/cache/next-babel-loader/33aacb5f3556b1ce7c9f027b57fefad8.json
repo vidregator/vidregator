@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default (query => query.trim());","map":{"version":3,"sources":["/home/runner/vidregator-1/lib/cleanQuery.js"],"names":["query","trim"],"mappings":"AAAA,gBAAgBA,KAAD,IAAWA,KAAK,CAACC,IAAN,EAA1B","sourcesContent":["export default (query) => query.trim()"]},"metadata":{},"sourceType":"module"}

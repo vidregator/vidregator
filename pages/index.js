@@ -1,40 +1,37 @@
 import { useState } from 'react'
-import Head from 'next/head'
 import useSWR from 'swr'
+import { useDebounce } from 'use-debounce'
+import Global from '../components/Global'
+import SearchBox from '../components/SearchBox'
+import VideoSection from '../components/VideoSection'
+import Stack from '../components/Stack'
 import apiSearch from '../lib/apiSearch'
 
 export default () => {
-  const [ query, setQuery ] = useState('test lol')
-  const { data, error } = useSWR(query, apiSearch)
+  const [ query, setQuery ] = useState('')
+  const [ debouncedQuery ] = useDebounce(query, 800)
+  const { data, error } = useSWR(debouncedQuery, apiSearch)
 
   return (
     <div>
-      <Head>
-        <title>Vidregator</title>
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css' />
-      </Head>
+      <Global />
 
-      <input
-        type='search'
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <Stack space={48}>
+        <SearchBox
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder='Search for anything...'
+        />
 
-      {error ? 'Error!' : data ? (
-        data.map((site) => (
-          <div>
-            <strong>{site.name}</strong><br/>
-            <ul>{site.results.map((result) => (
-              <li>
-                <strong>{result.name}</strong><br/>
-                Description:  {result.description}<br/>
-                Tags: {result.tags.join(', ')}
-              </li>
-            ))}</ul>
-          </div>
-        ))
-      ) : 'Loading...'}
+        {query.trim() && (error ? `Error! ${error.message}` : data ? (
+          data.map((site) => (
+            <VideoSection
+              name={site.name}
+              videos={site.results}
+            />
+          ))
+        ) : 'Loading...')}
+      </Stack>
     </div>
   )
 }
