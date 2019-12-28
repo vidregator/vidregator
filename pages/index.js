@@ -4,6 +4,7 @@ import { useDebounce } from 'use-debounce'
 import Global from '../components/Global'
 import SearchBox from '../components/SearchBox'
 import VideoSection from '../components/VideoSection'
+import Loader from '../components/Loader'
 import Stack from '../components/Stack'
 import apiSearch from '../lib/apiSearch'
 
@@ -31,7 +32,7 @@ export default () => {
               key={site.name}
             />
           ) : null)
-        ) : 'Loading...')}
+        ) : <Loader />)}
       </Stack>
     </div>
   )
