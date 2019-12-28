@@ -12,6 +12,20 @@ cd vidregator
 yarn dev
 ```
 
+## Configuration
+
+Vidregator supports setting **optional** custom configuration values to add features like Redis caching. First, create a file called `.env` if it isn't already there.
+
+Redis caching enables queries to be fullfilled much faster by storing the results for a day. You'll need a server, but you can get one for free up to 30MB over at [Redis Labs](https://redislabs.com/).
+
+Once your server is set up, add the following lines to the `.env` file.
+
+```
+REDIS_CACHE_HOST=<insert host here>
+REDIS_CACHE_PORT=<insert port here>
+REDIS_CACHE_PASSWORD=<insert password here>
+```
+
 ## Adding Sites
 
 This repository only provides the base interface and infrastructure to create your very own video aggregator website. To actually get videos from sites to Vidregator you'll need to write some simple JavaScript code.
