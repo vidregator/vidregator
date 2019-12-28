@@ -26,6 +26,12 @@ REDIS_CACHE_PORT=<insert port here>
 REDIS_CACHE_PASSWORD=<insert password here>
 ```
 
+You may also want to add a custom name for your site. Just add a line like the following to `.env`.
+
+```
+SITE_NAME=<insert site name here>
+```
+
 ## Adding Sites
 
 This repository only provides the base interface and infrastructure to create your very own video aggregator website. To actually get videos from sites to Vidregator you'll need to write some simple JavaScript code.

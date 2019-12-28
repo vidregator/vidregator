@@ -14,9 +14,7 @@ export default () => {
   const { data, error } = useSWR(debouncedQuery, apiSearch)
 
   return (
-    <div>
-      <Global />
-
+    <Global>
       <Stack space={48}>
         <SearchBox
           value={query}
@@ -34,6 +32,6 @@ export default () => {
           ) : null)
         ) : <Loader />)}
       </Stack>
-    </div>
+    </Global>
   )
 }
