@@ -67,7 +67,7 @@ export default {
   name: 'YouTube',
   search: async (query) => {
     const res1 = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=${encodeURIComponent(query)}&key=${encodeURIComponent(process.env.YOUTUBE_API_KEY)}`, {
-      headers: {  'Accept': 'application/json' }
+      headers: { 'Accept': 'application/json' }
     })
     const json1 = await res1.json()
 
@@ -77,7 +77,7 @@ export default {
 
     const videoTags = await Promise.all(json1.items.map((item) => (async () => {
       const res2 = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=topicDetails&id=${encodeURIComponent(item.id.videoId)}&maxResults=1&key=${encodeURIComponent(process.env.YOUTUBE_API_KEY)}`, {
-        headers: {  'Accept': 'application/json' }
+        headers: { 'Accept': 'application/json' }
       })
       const json2 = await res2.json()
 

@@ -9,7 +9,7 @@ import apiSearch from '../lib/apiSearch'
 
 export default () => {
   const [ query, setQuery ] = useState('')
-  const [ debouncedQuery ] = useDebounce(query, 800)
+  const [ debouncedQuery ] = useDebounce(query, 500)
   const { data, error } = useSWR(debouncedQuery, apiSearch)
 
   return (

@@ -8,11 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "9.1.6",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-feather": "^2.0.3",
+    "slugify": "^1.3.6",
     "swr": "^0.1.15",
     "unescape": "^1.0.1",
     "use-debounce": "^3.3.0"
