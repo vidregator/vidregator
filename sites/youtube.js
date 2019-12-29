@@ -65,8 +65,8 @@ const topics = {
 
 export default {
   name: 'YouTube',
-  search: async (query) => {
-    const res1 = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=5&q=${encodeURIComponent(query)}&key=${encodeURIComponent(process.env.YOUTUBE_API_KEY)}`, {
+  search: async (query, count) => {
+    const res1 = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${count}&q=${encodeURIComponent(query)}&key=${encodeURIComponent(process.env.YOUTUBE_API_KEY)}`, {
       headers: { 'Accept': 'application/json' }
     })
     const json1 = await res1.json()

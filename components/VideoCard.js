@@ -1,8 +1,8 @@
 import styles from '../styles'
 
-export default ({ name, image, tags, url }) => (
+export default ({ name, image, tags, url, onVisit }) => (
   <article>
-    <a href={url}>
+    <a href={url} target='_blank' onClick={() => onVisit && onVisit(tags)}>
       {image && <img src={image} alt={`${name} thumbnail`} />}
       <h1>{name}</h1>
       {tags && <p>{tags.map((tag) => `#${tag}`).join(' ')}</p>}

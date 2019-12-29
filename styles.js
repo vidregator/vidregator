@@ -23,7 +23,7 @@ export default {
   `,
   grid: `
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   `,
