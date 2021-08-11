@@ -1,3 +1,7 @@
+> 🚩 **This project is archived!** 🚩
+> 
+> *I suppose I lost interest in continuing development of this. I may continue sometime in the future.*
+
 # Vidregator Core
 
 Vidregator is a project that aims to let anyone run video aggregator sites super easily.
